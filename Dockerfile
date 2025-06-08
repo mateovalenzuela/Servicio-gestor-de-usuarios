@@ -1,6 +1,6 @@
-FROM python:3.11.8-alpine3.19
+FROM python:3.11.10-alpine3.19
 
-WORKDIR /home/app
+WORKDIR /home/app/user_service
 
 RUN apk update \
     && apk add --no-cache gcc musl-dev postgresql-dev python3-dev py3-pip  libffi-dev\
@@ -10,7 +10,7 @@ COPY ./requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-COPY . /home/app
+COPY . /home/app/user_service
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
