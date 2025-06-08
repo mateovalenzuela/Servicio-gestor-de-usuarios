@@ -56,7 +56,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'drf_yasg',
     'authentication',
-    'gateway'
 ]
 
 MIDDLEWARE = [

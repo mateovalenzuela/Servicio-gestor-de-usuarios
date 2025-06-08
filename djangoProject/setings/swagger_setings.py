@@ -1,4 +1,3 @@
-
 SWAGGER_SETTINGS = {
     'DOC_EXPANSION': 'none',
     "SECURITY_DEFINITIONS": {
